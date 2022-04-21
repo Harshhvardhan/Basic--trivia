@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function changebg(){
+    document.bgColor = document.getElementById("txt").value;
+}
+ function ttle(){
+    
+  document.title   = document.getElementById("txt").value;
+    // var ttl = ttl;
+ }
+    </script>
+    <style>
+        form{
+            text-align: center;
+            font-size: 40px;
+           padding: auto;
+           padding-top: 180px;
+           
+        }
+        input{
+            text-align: center;
+            font-size: 25px;
+            font-family:cursive;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            background-color: skyblue;
+            border-color: rgb(6, 27, 49);
+            border: 2px solid rgb(20, 9, 20);
+            box-shadow: 2px 3px 3px 2px rgb(19, 12, 51);
+            cursor: pointer;
+        }
+      
+    </style>
+</head>
+<body>
+   <form action="">
+        <input type="text" placeholder="Enter Color Code here" id="txt" > <br> 
+        <input type="button" value="Enter" onclick="changebg(); ttle()" >
+    </form>
+    
+</body>
+</html>
